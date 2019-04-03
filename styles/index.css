@@ -109,6 +109,60 @@ ul {
   flex: 1;
   background-color: green;
 }
+.nav {
+  padding: 14px;
+  background-color: #fff;
+  display: flex;
+}
+.nav a {
+  flex: 1;
+  text-align: center;
+  color: #333;
+}
+.nav img {
+  width: 50%;
+  display: inline-block;
+}
+.good_list {
+  padding: 10px;
+}
+.good_list .pyg_pbox {
+  width: 100%;
+  padding-bottom: 5px;
+}
+.good_list .pyg_pbox > img {
+  width: 100%;
+  display: block;
+}
+.good_list .pyg_pbox > .pyg_sbox {
+  width: 49% ;
+  margin-top: 10px;
+  float: left;
+  background-color: #fff;
+}
+.good_list .pyg_pbox > .pyg_sbox > .pgy_good {
+  width: 100%;
+}
+.good_list .pyg_pbox > .pyg_sbox > .pgy_good > img {
+  width: 100%;
+  display: block;
+}
+.good_list .pyg_pbox > .pyg_sbox > .pgy_good > .pgy_desc {
+  color: #333;
+  font-size: 13px;
+  margin: 5px 0;
+}
+.good_list .pyg_pbox > .pyg_sbox > .pgy_good > .pyg_price {
+  color: red;
+}
+.good_list .pyg_pbox > .pyg_sbox > .pyg_btncate {
+  width: 80%;
+  display: block;
+  margin: 5px auto;
+}
+.good_list .pyg_pbox > .pyg_sbox:nth-of-type(even) {
+  margin-left: 2%;
+}
 .footer {
   height: 45px;
   background-color: blue;

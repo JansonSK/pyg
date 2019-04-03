@@ -23,6 +23,63 @@
     flex: 1;
     background-color: green;
 }
+
+.nav{
+    padding: 14px;
+    background-color: #fff;
+    display: flex;
+    a{
+        flex: 1;
+        text-align: center; 
+        color:#333;
+    }
+    img{
+        width: 50%;
+        display: inline-block;
+    }
+}
+.good_list{
+    padding: 10px;
+    .pyg_pbox{
+        width: 100%;
+        padding-bottom: 5px;
+        > img{
+            width: 100%;
+            display: block;
+        }
+        > .pyg_sbox {
+            width:49% ;
+            margin-top: 10px;
+            float: left;
+            background-color: #fff;
+            > .pgy_good{
+                width: 100%;
+                > img {
+                    width: 100%;
+                    display: block;
+                }
+                > .pgy_desc{
+                    color: #333;
+                    font-size: 13px;
+                    margin: 5px 0;
+                }
+                > .pyg_price{
+                    color:red;
+                }
+            }
+            > .pyg_btncate{
+                width: 80%;
+                display:block;
+                margin: 5px auto;
+            }
+        }
+        > .pyg_sbox:nth-of-type(even){
+            margin-left: 2%;
+        }
+    }
+}
+
+
 .footer{
     
     height: 45px;
