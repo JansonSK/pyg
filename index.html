@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>29-品优购</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
+    <title>品优购</title>
 </head>
-<body>
-    
 
-    
+<body>
+    <div class="layout">
+        <div class="header">
+            <div class="mui-input-row mui-search">
+                <input type="search" class="mui-input-clear" placeholder="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="banner">
+                <div class="mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                      
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <nav class="mui-bar mui-bar-tab ">
+                <a class="mui-tab-item mui-active" href="#tabbar">
+                    <span class="mui-icon mui-icon-home"></span>
+                    <span class="mui-tab-label">首页</span>
+                </a>
+                <a class="mui-tab-item" href="#tabbar-with-chat">
+                    <span class="mui-icon mui-icon-list"></span>
+                    <span class="mui-tab-label">分页</span>
+                </a>
+                <a class="mui-tab-item" href="#tabbar-with-contact">
+                    <span class="fa fa-shopping-cart" style="font-size:18px"></span></br>
+                    <span class="mui-tab-label" style="font-size:10px">购物车</span>
+                </a>
+                <a class="mui-tab-item" href="#tabbar-with-map">
+                    <span class="mui-icon mui-icon-contact"></span>
+                    <span class="mui-tab-label">我的</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <!-- 生成动态结构 -->
+        <script type="text/template" id='lbt_banner'>
+        <div class="mui-slider-item mui-slider-item-duplicate"><a href="{{data[data.length-1].navigator_url}}"><img src="{{data[data.length-1].image_src}}" /></a></div>
+        {{each data value index}}
+            <div class="mui-slider-item"><a href="{{value.navigator_url}}"><img src="{{value.image_src}}" /></a></div>
+        {{/each}}
+		
+        <div class="mui-slider-item mui-slider-item-duplicate"><a href="{{data[0].navigator_url}}"><img src="{{data[0].image_src}}" /></a></div>
+    </script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="lib/arttemplate/template-web.js"></script>
+    <script src="./lib/iscroll/iscroll.js"></script>
+    <script src="./lib/zepto/zepto.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
