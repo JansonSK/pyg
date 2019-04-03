@@ -20,11 +20,18 @@
             </div>
         </div>
         <div class="content">
+            <!-- 中间部分 -->
             <div class="banner">
                 <div class="mui-slider">
-                    <div class="mui-slider-group mui-slider-loop">
-                      
+                    <div class="mui-slider-group mui-slider-loop indexBanner">
+                    <!-- 轮播图的渲染 -->
+
+                    </div>
+                    <div class="mui-slider-indicator">
+                        <!-- 轮播图的点 -->
+                    </div>
                         
+                       
                     </div>
                 </div>
             </div>
@@ -51,7 +58,7 @@
         </div>
     </div>
     <!-- 生成动态结构 -->
-        <script type="text/template" id='lbt_banner'>
+    <script type="text/template" id='lbt_banner'>
         <div class="mui-slider-item mui-slider-item-duplicate"><a href="{{data[data.length-1].navigator_url}}"><img src="{{data[data.length-1].image_src}}" /></a></div>
         {{each data value index}}
             <div class="mui-slider-item"><a href="{{value.navigator_url}}"><img src="{{value.image_src}}" /></a></div>
@@ -59,6 +66,16 @@
 		
         <div class="mui-slider-item mui-slider-item-duplicate"><a href="{{data[0].navigator_url}}"><img src="{{data[0].image_src}}" /></a></div>
     </script>
+    <!-- 轮播图的点动态结构 -->
+    <script src="text/template" id="lbt_selreot">
+      {{each data value index}}
+            <div class="mui-indicator {{index==0?'mui-active':''}}"></div>
+        {{/each}}
+    </script>
+
+
+
+
     <script src="./lib/mui/js/mui.js"></script>
     <script src="lib/arttemplate/template-web.js"></script>
     <script src="./lib/iscroll/iscroll.js"></script>
