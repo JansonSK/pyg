@@ -107,7 +107,7 @@ ul {
 }
 .content {
   flex: 1;
-  background-color: green;
+  background-color: #fff;
 }
 .nav {
   padding: 14px;
@@ -115,6 +115,7 @@ ul {
   display: flex;
 }
 .nav a {
+  font-size: 12px;
   flex: 1;
   text-align: center;
   color: #333;
@@ -161,7 +162,7 @@ ul {
   margin: 5px auto;
 }
 .good_list .pyg_pbox > .pyg_sbox:nth-of-type(even) {
-  margin-left: 2%;
+  margin-left: 1%;
 }
 .footer {
   height: 45px;
