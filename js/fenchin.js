@@ -1,5 +1,7 @@
 	$(function () {
 
+		
+
 	    $('.mui-icon-search').on('tap', function () {
 	        mui('.mui-off-canvas-wrap').offCanvas('show');
 

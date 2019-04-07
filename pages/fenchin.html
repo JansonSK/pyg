@@ -40,8 +40,7 @@
                         <div class="mui-scroll">
                             <!-- 主界面具体展示内容 -->
                             <div class="show">
-
-
+                                
 
                             </div>
 
@@ -85,21 +84,21 @@
     </div>
     <script type="text/template" id='goodlistTemp'>
         {{each goods value index}}
+        
             <div class="goof">
                 <div class="imgBox">
                      <img src="{{value.goods_small_logo}}" alt="">
                 </div>
-                  <div class="make">
-                   <a href="#">{{value.goods_name}}</a>
-                  
-                    <span>
+                <div class="make">
+                     <a href="#">{{value.goods_name}}</a>
+                      <span>
                       ￥：{{value.goods_price}}
-                       </span>
+                    </span>
 
               
-                     </div>
-
-              </div>
+                </div>
+            </div>
+        
         {{/each}}
 
 
