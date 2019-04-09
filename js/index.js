@@ -9,7 +9,7 @@ $(function () {
 
     $.ajax({
         type: 'get',
-        url: 'http://157.122.54.189:9094/api/public/v1/home/swiperdata',
+        url: 'home/swiperdata',
         dataType: 'json',
         success: function (result) {
             // console.log(result)
@@ -41,7 +41,7 @@ $(function () {
 function goodList(){
       $.ajax({
           type:'get',
-          url:'http://157.122.54.189:9094/api/public/v1/home/goodslist',
+          url:'home/goodslist',
           dataType:'json',
           success:function(result){
                   console.log(result)

@@ -42,7 +42,7 @@ $(function () {
         data: $.getParameter(location.search),
         dataType: 'json',
         success: function (result) {
-            // info.cat_id = result.data.cat_id
+            info.cat_id = result.data.cat_id
             info.goods_id = result.data.goods_id
             info.goods_name = result.data.goods_name
             info.goods_number = result.data.goods_number
