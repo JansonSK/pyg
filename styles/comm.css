@@ -7,13 +7,15 @@
   flex-direction: column;
 }
 .header {
+  width: 100%;
   padding: 4px;
   height: 45px;
   background-color: #ccc;
 }
 .content {
+  margin: 5px;
   flex: 1;
-  background-color: #fff;
+  width: 100%;
   overflow: scroll;
 }
 .footer {

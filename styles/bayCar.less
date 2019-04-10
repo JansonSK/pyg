@@ -1,0 +1,97 @@
+@import './reset.less';
+@import './comm.less';
+
+
+
+
+h2 {
+    font-size: 18px;
+}  
+.address {
+    
+    background-color: #fff;
+    width:100%;
+    height: 50px;
+  >span{
+      font-size: 44px;
+      text-align: center;
+      line-height: 50px;
+      width:20%;
+      height:100%;
+      color: #333;
+      display: block;
+      float: left;
+  }
+  >.add{
+    width:70%;
+    height:100%;
+      float: left;
+      >span:nth-of-type(1){
+          font-size: 20px;
+      }
+      >span:nth-of-type(2){
+        font-size: 16px;
+      }
+  }
+}
+.money{
+    
+
+    width:100%;
+    height: 50px;
+    background-color: #fff;
+    >div{
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        line-height: 50px;
+        >a{
+            float: right;
+        }
+    }
+}
+
+.order{
+    padding: 5px;
+    background-color: #fff;
+    width:100%;
+    height: 100px;
+    display: flex;
+    flex-flow: nowrap;
+    >.select{
+        width: 50px;
+        height: 100%;
+         >form{
+             margin-top:35px;
+             &:before ,&:after{
+                 width:0px;
+             }
+             &:after{
+                width:0px;
+            }
+                
+             
+             
+         }
+    }
+
+    
+    >.img{
+       
+        height: 100%;
+        flex:1;
+        >img{
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+    .boc{
+        margin-left: 10px;
+        flex: 2
+
+
+        
+    }
+    
+}
